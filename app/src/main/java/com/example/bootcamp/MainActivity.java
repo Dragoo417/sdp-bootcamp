@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, GreetingActivity.class);
         EditText editText = (EditText) findViewById(R.id.mainText);
         String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+        intent.putExtra(EXTRA_MESSAGE, "Hello " + message+"!");
         startActivity(intent);
     }
 }
